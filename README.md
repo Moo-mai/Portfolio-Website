@@ -14,7 +14,6 @@ It is designed as a static website and hosted using **GitHub Pages**.
 ## 📂 Project Structure
 
 ##Portfolio-Website/
-│
 ├── index.html # Main page
 ├── style.css # Stylesheet
 ├── script.js # JavaScript logic
@@ -40,4 +39,4 @@ If you would like to contact me, feel free to reach out via GitHub.
 
 ---
 
-© 2024 Moo-mai
+© 2025 Moo-mai
