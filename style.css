@@ -1,0 +1,1127 @@
+/* ========================================
+   Global Styles & Reset
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    color: #fff;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ========================================
+   Navigation Bar
+   ======================================== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ffffff 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background: #fff;
+    transition: width 0.3s;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+/* Hero Section - Updated Layout */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 5%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 0 0 400px;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hero-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column-reverse;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-image {
+        flex: 0 0 300px;
+    }
+    
+    .hero-text {
+        max-width: 100%;
+    }
+}
+/* ========================================
+   Section Styles
+   ======================================== */
+section {
+    min-height: 100vh;
+    padding: 100px 2rem 2rem;
+    background: rgba(20, 20, 20, 0.8);
+    backdrop-filter: blur(10px);
+    margin: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+section:nth-child(even) {
+    background: rgba(30, 30, 30, 0.8);
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(45deg, #ffffff 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================
+   About Section
+   ======================================== */
+/* ========================================
+   About Section - New Layout
+   ======================================== */
+.about-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    margin-bottom: 4rem;
+}
+
+.about-image-container {
+    flex: 0 0 350px;
+    position: relative;
+}
+
+.about-profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.about-profile-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(255, 255, 255, 0.2);
+}
+
+.about-text-container {
+    flex: 1;
+    text-align: left;
+}
+
+.about-intro {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.about-education {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #ddd;
+    line-height: 1.8;
+}
+
+.gpa-highlight {
+    background: linear-gradient(45deg, #aefb2a 0%, #57ebde 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.about-text-container strong {
+    background: linear-gradient(45deg, #aefb2a 0%, #57ebde 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ========================================
+   Skills Section - ปรับใหม่ให้อยู่กลางและชิดกัน
+   ======================================== */
+.skills-section {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(45deg, #ffffff 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+/* ========================================
+   Skill Button - Neon Glow Effect
+   ======================================== */
+.skill-button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    border: 1px solid #ffffff80;
+    transition: 0.5s ease;
+    user-select: none;
+    position: relative;
+}
+
+.skill-button:hover,
+.skill-button:focus {
+    color: #ffffff;
+    background: #008cff;
+    border: 1px solid #008cff;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+        0 0 100px #008cff;
+}
+
+.skill-button:active {
+    transform: scale(0.95);
+}
+
+.skill-button span {
+    position: relative;
+    z-index: 1;
+}
+
+/* ========================================
+   Responsive Design for About Section
+   ======================================== */
+@media (max-width: 968px) {
+    .about-layout {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .skills-section {
+        padding: 0 2%;
+    }
+    
+    .skills-title {
+        font-size: 2rem;
+        margin-bottom: 1.2rem;
+    }
+    
+    .skills {
+        padding: 0 2%;
+        gap: 1rem;
+    }
+    
+    .about-image-container {
+        flex: 0 0 300px;
+    }
+    
+    .about-text-container {
+        text-align: center;
+    }
+    
+    .about-intro {
+        font-size: 1.5rem;
+    }
+    
+    .about-education {
+        font-size: 1.1rem;
+    }
+    
+    .about-description {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-layout {
+        gap: 40px;
+    }
+    
+    .about-image-container {
+        flex: 0 0 250px;
+    }
+    
+    .skill-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+    
+    .skills-title {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-intro {
+        font-size: 1.3rem;
+    }
+    
+    .about-education {
+        font-size: 1rem;
+    }
+    
+    .skill-button {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+    
+    .skills-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .skills {
+        gap: 0.8rem;
+    }
+}
+
+/* ========================================
+   Services Section
+   ======================================== */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* ========================================
+   Projects Section
+   ======================================== */
+/* ========================================
+   Projects Section
+   ======================================== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.project-details {
+    margin-top: 0.5rem;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+/* ========================================
+   Certificates Section
+   ======================================== */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.certificate-card {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.certificate-card:hover {
+    background: rgba(40, 40, 40, 0.9);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.certificate-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.certificate-card:hover .certificate-image img {
+    transform: scale(1.05);
+}
+
+.certificate-info {
+    padding: 1.5rem;
+}
+
+.certificate-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.certificate-issuer {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    color: #aaa;
+}
+
+.certificate-date {
+    margin-top: 0.3rem;
+    font-size: 0.85rem;
+    opacity: 0.6;
+    color: #999;
+}
+
+/* ========================================
+   Contact Section
+   ======================================== */
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    background: rgba(30, 30, 30, 0.8);
+    padding: 2rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(30, 30, 30, 0.8);
+    color: #fff;
+    font-size: 1rem;
+    transition: border 0.3s, background 0.3s;
+    font-family: inherit;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #fff;
+    background: rgba(40, 40, 40, 0.9);
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-button {
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #333333 0%, #000000 100%);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.submit-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+    background: linear-gradient(45deg, #ffffff 0%, #666666 100%);
+    color: #000;
+}
+
+/* ========================================
+   Footer
+   ======================================== */
+footer {
+    background: rgba(10, 10, 10, 0.9);
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: #999;
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ========================================
+   Responsive Design
+   ======================================== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    nav ul {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    section {
+        margin: 1rem;
+        padding: 80px 1rem 1rem;
+    }
+    
+    .services-grid,
+    .projects-grid,
+    .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .cta-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+    }
+}
+
+/* ================================================================================
+   Services Section - พื้นหลังดำสนิท (ตามที่ต้องการ) โค้ดส่วนนี้เป็นส่วนของ Services Section
+   ================================================================================*/
+#services {
+    background: transparent !important; /* ไม่ให้ทับกับ body gradient */
+    position: relative;
+}
+
+#services::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 100%);
+    border-radius: 20px;
+    z-index: -1;
+}
+
+/* หัวข้อ Our Services สว่างขึ้นนิดเพื่อตัดกับพื้นดำ */
+#services h2 {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ========================================
+   Glow Gradient Border (ฟ้า → ชมพู) + Glow เมื่อ hover
+   ======================================== */
+.glow-container {
+    padding: 5px; /* ความหนากรอบ */
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+}
+
+.glow-container::before {
+    content: "";
+    position: absolute;
+    inset: -5px; /* ขยายพื้นที่เพื่อให้ glow ลอยออกมาเต็มที่ */
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    border-radius: 25px;
+    z-index: -1;
+    filter: blur(0);
+    transition: filter 0.4s ease;
+    pointer-events: none;
+}
+
+.glow-container:hover::before {
+    filter: blur(22px); /* Glow เข้มสวยเมื่อ hover */
+}
+
+.glow-container:active::before {
+    filter: blur(12px);
+}
+
+/* การ์ดด้านใน */
+.glow-container > .service-card {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 2rem;
+    border-radius: 15px;
+    border: none !important;
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.glow-container:hover > .service-card {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
+}
+
+/* ข้อความใน card */
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+/*======================================================================================
+
+/* ========================================
+   View PDF Button Style
+   ======================================== */
+
+.certificate-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้อยู่ตรงกลาง */
+    text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
+}
+
+.view-cert-btn {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    background-color: rgb(122, 48, 143);
+    font-size: 0.75rem;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 2px 1px rgb(122, 48, 143);
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+    font-weight: 600;
+    display: inline-block;
+}
+
+.view-cert-btn::before,
+.view-cert-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.view-cert-btn::before {
+    left: 0;
+    background-image: radial-gradient(
+        circle at 0% 45%,
+        rgba(16, 5, 36, 1) 19%,
+        rgba(16, 5, 36, 0.26) 46%,
+        rgba(16, 5, 36, 0) 100%
+    );
+}
+
+.view-cert-btn::after {
+    right: 0;
+    background-image: radial-gradient(
+        circle at 100% 45%,
+        rgba(16, 5, 36, 1) 19%,
+        rgba(16, 5, 36, 0.26) 46%,
+        rgba(16, 5, 36, 0) 100%
+    );
+}
+
+.view-cert-btn:hover {
+    box-shadow: 0px 0px 20px 0 rgb(122, 48, 143);
+}
+
+.view-cert-btn:hover::before,
+.view-cert-btn:hover::after {
+    width: 0;
+    opacity: 0;
+}
+
+/* เพื่อให้ไอคอนและข้อความไม่ถูกบัง */
+.view-cert-btn {
+    position: relative;
+    z-index: 1;
+}
+
+/*==================================================
+
+/* Hero Section h1, p ขนาดใหญ่ขึ้น */
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #ffffff 0%, #888888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero .subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+/* Gradient Button Style */
+.gradient-button {
+    position: relative;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+
+.gradient-button:hover {
+    transform: scale(1.03);
+}
+
+.gradient-button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(
+        from 0deg,
+        #ff6b6b,
+        #4ecdc4,
+        #45b7d1,
+        #96ceb4,
+        #feca57,
+        #ff9ff3,
+        #ff6b6b
+    );
+    z-index: -2;
+    filter: blur(10px);
+    transform: rotate(0deg);
+    transition: transform 1.5s ease-in-out;
+}
+
+.gradient-button:hover::before {
+    transform: rotate(180deg);
+}
+
+.gradient-button::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    background: black;
+    border-radius: 47px;
+    z-index: -1;
+    filter: blur(5px);
+}
+
+.gradient-text {
+    color: transparent;
+    background: conic-gradient(
+        from 0deg,
+        #ff6b6b,
+        #4ecdc4,
+        #45b7d1,
+        #96ceb4,
+        #feca57,
+        #ff9ff3,
+        #ff6b6b
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    filter: hue-rotate(0deg);
+}
+
+.gradient-button:hover .gradient-text {
+    animation: hue-rotating 2s linear infinite;
+}
+
+.gradient-button:active {
+    transform: scale(0.99);
+}
+
+@keyframes hue-rotating {
+    to {
+        filter: hue-rotate(360deg);
+    }
+}
+
+/*=================================================
+
+
+/* ========================================
+   Animated Button for Projects
+   ======================================== */
+.animated-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 32px;
+  margin-top: 1rem;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: greenyellow;
+  box-shadow: 0 0 0 2px greenyellow;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  text-decoration: none;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: greenyellow;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: greenyellow;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px greenyellow;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}

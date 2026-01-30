@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio - Weeraphat Sripromma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Portfolio Website</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Frontend Developer | Weeraphat Sripromma</p>
+                <p class="subtitle">Creating Beautiful & Interactive Web Experiences</p>
+                <button class="gradient-button" onclick="scrollToContact()">
+                    <span class="gradient-text">Get In Touch</span>
+                </button>
+            </div>
+            <div class="hero-image">
+                <img src="images/001.png" alt="Weeraphat Sripromma">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-layout">
+                <div class="about-image-container">
+                    <img src="images/002.png" alt="Weeraphat Sripromma" class="about-profile-image">
+                </div>
+                <div class="about-text-container">
+                    <p class="about-intro">
+                        สวัสดีครับ! ผม <strong>วีรภัทร ศรีพรหมมา (ใหม่)</strong>
+                    </p>
+                    <p class="about-education">
+                        กำลังศึกษาอยู่ในระดับปริญญาตรี ชั้นปีที่ 3<br>
+                        สาขาวิศวกรรมคอมพิวเตอร์<br>
+                        มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร<br>
+                        <span class="gpa-highlight">(GPA: 3.47)</span>
+                    </p>
+                    <p class="about-description">
+                        ผมมีความสนใจในด้าน <strong>Web Development</strong> โดยเฉพาะด้าน <strong>Frontend
+                            Development</strong>
+                        และมุ่งพัฒนาทักษะการออกแบบและพัฒนาเว็บแอปพลิเคชันที่ตอบโจทย์ผู้ใช้งานจริง
+                        มีความกระตือรือร้นในการเรียนรู้และพร้อมรับประสบการณ์ใหม่ๆ อยู่เสมอ
+                    </p>
+                </div>
+            </div>
+
+            <div class="skills-section">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills">
+                    <button class="skill-button">
+                        <span>HTML5</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>CSS3</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>JavaScript</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>PHP</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>Java</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>C</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>MySQL</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>VS Code</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>XAMPP</span>
+                    </button>
+                    <button class="skill-button">
+                        <span>Responsive Design</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Services</h2>
+        <div class="services-grid">
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>🎨 Frontend Development</h3>
+                    <p>ออกแบบและพัฒนาหน้าเว็บไซต์ที่สวยงาม ใช้งานง่าย และ Responsive ด้วย HTML, CSS, JavaScript
+                        พร้อมการออกแบบ UI/UX ที่ตอบโจทย์ผู้ใช้งาน</p>
+                </div>
+            </div>
+
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>💻 Web Application Development</h3>
+                    <p>พัฒนาเว็บแอปพลิเคชันแบบครบวงจร ตั้งแต่การออกแบบหน้าตา การจัดการฐานข้อมูล ไปจนถึงระบบ Backend ด้วย
+                        PHP และ MySQL</p>
+                </div>
+            </div>
+
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>🗄️ Database Design & Management</h3>
+                    <p>ออกแบบและจัดการฐานข้อมูลด้วย MySQL เพื่อให้ระบบทำงานได้อย่างมีประสิทธิภาพ
+                        พร้อมระบบตรวจสอบข้อมูลซ้ำและความถูกต้อง</p>
+                </div>
+            </div>
+
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>📊 Data Visualization</h3>
+                    <p>แสดงผลข้อมูลแบบกราฟิก เช่น Bar Chart, Line Chart
+                        เพื่อให้มองเห็นภาพรวมของข้อมูลได้ง่ายและชัดเจนยิ่งขึ้น</p>
+                </div>
+            </div>
+
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>🔐 Authentication System</h3>
+                    <p>สร้างระบบล็อกอินและยืนยันตัวตนที่ปลอดภัย
+                        เพื่อให้ผู้ใช้งานสามารถเข้าถึงข้อมูลส่วนตัวได้อย่างมั่นใจ</p>
+                </div>
+            </div>
+
+            <div class="glow-container">
+                <div class="service-card">
+                    <h3>🎯 Interactive UI Design</h3>
+                    <p>ออกแบบ User Interface แบบ Interactive ที่ตอบสนองต่อการใช้งาน พร้อม Real-time Updates และ
+                        Animation ที่ลื่นไหล</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Restaurant.jpg"
+                        alt="Restaurant Cafe Website">
+                </div>
+                <div class="project-info">
+                    <h3>เว็ปไซต์ Restaurant Cafe Website</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP</p>
+                    <p class="project-details">
+                        • หน้าเมนูอาหาร, ระบบจองโต๊ะ, แกลเลอรี่<br>
+                        • PHP สำหรับจัดการการจอง<br>
+                        • JavaScript สำหรับ image carousel, filter เมนู<br>
+                        • CSS Grid/Flexbox สำหรับ responsive design
+                    </p>
+                    <a href="https://restaurant-delight-cafa.netlify.app/" target="_blank" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">ดูเว็บไซต์</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Hotel.jpg"
+                        alt="(Hotel Booking)">
+                </div>
+                <div class="project-info">
+                    <h3>เว็ปไซต์จองห้องพัก (Hotel Booking)</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, PHP, MySQL</p>
+                    <p class="project-details">
+                        • หน้าแสดงรายการห้องพักพร้อมรูปภาพ<br>
+                        • ฟอร์มจองห้องพักส่งข้อมูลผ่าน PHP<br>
+                        • ตรวจสอบวันที่ว่างและคำนวณราคาอัตโนมัติ<br>
+                        • หน้าแสดงประวัติการจอง
+                    </p>
+                    <a href="https://hotel-bookingsystem.netlify.app/" target="_blank" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">ดูเว็บไซต์</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/cinema cineplex.jpg"
+                        alt="(Cinema Website)">
+                </div>
+                <div class="project-info">
+                    <h3>เว็บไซต์โรงภาพยนตร์ (Cinema Website)</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, PHP, MySQL</p>
+                    <p class="project-details">
+                        • แสดงรอบหนังและตารางฉาย<br>
+                        • จองที่นั่งแบบ Interactive<br>
+                        • คำนวณราคาตั๋วอัตโนมัติ<br>
+                        • พิมพ์ใบจองพร้อม QR Code<br>
+                    </p>
+                    <a href="https://major-cinema.netlify.app/" target="_blank" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">ดูเว็บไซต์</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/Landing.jpg"
+                        alt="Landing Page">
+                </div>
+                <div class="project-info">
+                    <h3>เว็บไซต์ Landing Page บริษัทรับสร้างบ้าน</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                    <p class="project-details">
+                        • แสดงบริการรับสร้างบ้าน รีโนเวท<br>
+                        • แกลเลอรี่ผลงาน<br>
+                        • ฟอร์มติดต่อ<br>
+                    
+                    </p>
+                    <a href="https://landing-pagehomes.netlify.app/" target="_blank" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">ดูเว็บไซต์</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/catalog.jpg"
+                        alt="แคตตาล็อกแบบบ้าน">
+                </div>
+                <div class="project-info">
+                    <h3>เว็บไซต์แคตตาล็อกแบบบ้าน</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                    <p class="project-details">
+                        • แสดงแบบบ้านหลายสไตล์<br>
+                        • กรองตามประเภท (บ้านเดี่ยว/ทาวน์โฮม)<br>
+                        • คำนวณราคาประมาณการ<br>
+        
+                    </p>
+                    <a href="https://house-model-catalog.netlify.app/" target="_blank" class="animated-button">
+                        <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                        <span class="text">ดูเว็บไซต์</span>
+                        <span class="circle"></span>
+                        <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h2>My Certificate</h2>
+        <div class="certificates-grid">
+
+            <div class="certificate-card" onclick="openCertificate(0)">
+                <div class="certificate-image">
+                    <img src="images/Python_page-0002.jpg" alt="Python	Language">
+                </div>
+                <div class="certificate-info">
+                    <h3>Python Language</h3>
+                    <p class="certificate-issuer">Issuer : Thai Mooc</p>
+                    <p class="certificate-date">About : Fundamental of Computer Programming with Python Language</p>
+                    <button class="view-cert-btn"
+                        onclick="event.stopPropagation(); window.open('Python.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openCertificate(1)">
+                <div class="certificate-image">
+                    <img src="images/certificate chula mooc ai-10.jpg" alt="Chula AI-10">
+                </div>
+                <div class="certificate-info">
+                    <h3>Chula AI-10</h3>
+                    <p class="certificate-issuer">Issuer : Chula Mooc</p>
+                    <p class="certificate-date">About : Chula AI-10 : General AI Competency Framwork for Everyone</p>
+                    <button class="view-cert-btn" onclick="event.stopPropagation(); window.open('ai-10.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openCertificate(2)">
+                <div class="certificate-image">
+                    <img src="images/certificate chula mooc Cloud Com.jpg" alt="Cloud Computing for Everyone">
+                </div>
+                <div class="certificate-info">
+                    <h3>Cloud Computing</h3>
+                    <p class="certificate-issuer">Issuer : Chula Mooc</p>
+                    <p class="certificate-date">About : Cloud Computing for Everyone</p>
+                    <button class="view-cert-btn"
+                        onclick="event.stopPropagation(); window.open('Cloud%20Com.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openCertificate(3)">
+                <div class="certificate-image">
+                    <img src="images/การใช้งาน Github_page-0002.jpg" alt="Prompt Engineering with GitHub Copilot">
+                </div>
+                <div class="certificate-info">
+                    <h3>Prompt Engineering with GitHub Copilot</h3>
+                    <p class="certificate-issuer">Issuer : Thai Mooc </p>
+                    <p class="certificate-date">About : for the completion and fulfi lment of the online course Prompt
+                        Engineering with GitHub Copilot</p>
+                    <button class="view-cert-btn"
+                        onclick="event.stopPropagation(); window.open('การใช้งาน%20Github.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openCertificate(4)">
+                <div class="certificate-image">
+                    <img src="images/certificate chulu mooc Generative Ai.jpg" alt="Generative Ai">
+                </div>
+                <div class="certificate-info">
+                    <h3>Generative Ai</h3>
+                    <p class="certificate-issuer">Issuer : ChuIa Mooc</p>
+                    <p class="certificate-date">About : Generative Ai and Prompt Engineering</p>
+                    <button class="view-cert-btn"
+                        onclick="event.stopPropagation(); window.open('Generative%20Ai.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+            <div class="certificate-card" onclick="openCertificate(5)">
+                <div class="certificate-image">
+                    <img src="images/Weeraphat_Sripromma_weeraphat-srmutp.ac.th_page-0001.jpg"
+                        alt="CCNA : Introduction to Networks">
+                </div>
+                <div class="certificate-info">
+                    <h3>CCNA : Introduction to Networks</h3>
+                    <p class="certificate-issuer">Issuer : Rajamangala University of Technology Phra Nakhon</p>
+                    <p class="certificate-date">About : Cisco Networking Academy</p>
+                    <button class="view-cert-btn" onclick="event.stopPropagation(); window.open('CCNA.pdf', '_blank')">
+                        View PDF
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>ติดต่อฉัน</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <strong>📧 Email:</strong> weeraphat-s@rmutp.ac.th
+                </div>
+                <div class="info-item">
+                    <strong>📱 Phone:</strong> 063-490-2369
+                </div>
+                <div class="info-item">
+                    <strong>📍 Location:</strong> 36/4 หมู่ 3 ต.หอมเกร็ด อ.สามพราน จ.นครปฐม 73110
+                </div>
+                <div class="info-item">
+                    <strong>🎓 University:</strong> มหาวิทยาลัยเทคโนโลยีราชมงคลพระนคร
+                </div>
+            </div>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <label for="name">ชื่อ</label>
+                    <input type="text" id="name" name="name" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">เบอร์โทรติดต่อ</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">อีเมล</label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">ข้อความ</label>
+                    <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">ส่งข้อความ</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Weeraphat Sripromma. All rights reserved.</p>
+        <p>Frontend Developer | Computer Engineering Student</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
