@@ -14,12 +14,12 @@ It is designed as a static website and hosted using **GitHub Pages**.
 ## 📂 Project Structure
 
 ##Portfolio-Website/
-├── index.html # Main page
-├── style.css # Stylesheet
-├── script.js # JavaScript logic
-├── images/ # Images used in the website
-├── pdf/ # PDF files (resume / documents)
-└── README.md # Project documentation
+ - index.html # Main page
+ - style.css # Stylesheet
+ - script.js # JavaScript logic
+ - images/ # Images used in the website
+ - pdf/ # PDF files (resume / documents)
+ - README.md # Project documentation
 
 
 ## 🚀 How to View the Website
